@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A6D322EB-510E-4FB9-84AE-78D6CE59C32A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MyMapFinder</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>19E2038A-4E9C-4988-AF9D-6485DC4D99E9</key>
+		<string>https://github.com/rcavil/Personal.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MyMapFinder/MyMapFinder.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>19E2038A-4E9C-4988-AF9D-6485DC4D99E9</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rcavil/Personal.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>19E2038A-4E9C-4988-AF9D-6485DC4D99E9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>19E2038A-4E9C-4988-AF9D-6485DC4D99E9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Personal</string>
+		</dict>
+	</array>
+</dict>
+</plist>
