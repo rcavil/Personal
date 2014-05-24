@@ -10,6 +10,7 @@
 #import <MapKit/MapKit.h>
 #import "SearchEntryStore.h"
 #import "SearchEntry.h"
+#import "AlertView.h"
 
 @interface ViewController ()
 
@@ -224,7 +225,7 @@ didUpdateUserLocation:
     
     if (newEntryName.length==0)
     {
-        [self displayAlertView:@"New search entry is blank" :@"Add cancelled."];
+        [AlertView displayAlertView:@"New search entry is blank" :@"Add cancelled."];
     }
     
     else
@@ -237,12 +238,12 @@ didUpdateUserLocation:
             [self addNewSearchEntry:newEntryName];
             
             NSString *outputString=[NSString stringWithFormat:@"New search entry %@ has been added",newEntryName];
-            [self displayAlertView:outputString :@"Add completed."];
+            [AlertView displayAlertView:outputString :@"Add completed."];
         }
         else
         {
             NSString *outputString=[NSString stringWithFormat:@"New search entry %@ already exists",newEntryName];
-           [self displayAlertView:outputString :@"Add cancelled."];
+           [AlertView displayAlertView:outputString :@"Add cancelled."];
         }
     }
 
@@ -314,7 +315,7 @@ didUpdateUserLocation:
     for (MKMapItem *item in response.mapItems)
     {
         MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
-        
+    
         annotation.coordinate = item.placemark.coordinate;
         annotation.title      = item.name;
         annotation.subtitle   = [NSString stringWithFormat:@"%@ %@ %@", item.placemark.subThoroughfare, item.placemark.thoroughfare,item.phoneNumber];
@@ -324,25 +325,13 @@ didUpdateUserLocation:
 
 }
 
-
 - (void) clearMapAnnotations
 {
  [_mapView removeAnnotations:[_mapView annotations]];
 }
 
+//Will need to modify MKAnnotationView
 
-//Display alert view
-
-- (void) displayAlertView:(NSString *)title :(NSString *)message
-{
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
-                                                    message:message
-                                                   delegate:self
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
-    
-}
 
 @end
 

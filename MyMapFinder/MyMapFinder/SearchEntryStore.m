@@ -8,6 +8,7 @@
 
 #import "SearchEntryStore.h"
 #import "AppDelegate.h"
+#import "AlertView.h"
 
 @implementation SearchEntryStore
 
@@ -207,7 +208,7 @@
     
     if (![context save:&error])
     {
-        [self displayAlertView:(@"Data error") :(@"Error saving entry.")];
+        [AlertView displayAlertView:(@"Data error") :(@"Error saving entry.")];
     }
 
 }
@@ -255,7 +256,7 @@
     
     if (![context save:&error])
     {
-        [self displayAlertView:(@"Data error") :(@"Error removing entry.")];
+        [AlertView displayAlertView:(@"Data error") :(@"Error removing entry.")];
     }
 }
 
@@ -282,23 +283,11 @@
     
     if (![context save:&error])
     {
-        [self displayAlertView:(@"Data error") :(@"Error clearing table.")];
+        [AlertView displayAlertView:(@"Data error") :(@"Error clearing table.")];
     }
     
 }
 
-//Display alert view
-
-- (void) displayAlertView:(NSString *)title :(NSString *)message
-{
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
-                                                    message:message
-                                                   delegate:self
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
-    
-}
 
 
 @end

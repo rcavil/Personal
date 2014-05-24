@@ -28,6 +28,7 @@
 		E48212ED191EC651006A3EBB /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = E48212EC191EC651006A3EBB /* location.png */; };
 		E48212EF191EC7A2006A3EBB /* mapType.png in Resources */ = {isa = PBXBuildFile; fileRef = E48212EE191EC7A2006A3EBB /* mapType.png */; };
 		E48212F1191EC903006A3EBB /* index-cards.png in Resources */ = {isa = PBXBuildFile; fileRef = E48212F0191EC903006A3EBB /* index-cards.png */; };
+		E4A4643C1930D89700E27840 /* AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A4643B1930D89700E27840 /* AlertView.m */; };
 		E4C48FEA190C166D006E15BE /* SearchEntryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C48FE9190C166D006E15BE /* SearchEntryTableViewController.m */; };
 		E4C48FEF190C17EC006E15BE /* SearchEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C48FEE190C17EC006E15BE /* SearchEntry.m */; };
 		E4C48FF2190C1E6E006E15BE /* SearchEntryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C48FF1190C1E6E006E15BE /* SearchEntryStore.m */; };
@@ -75,6 +76,8 @@
 		E48212EC191EC651006A3EBB /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
 		E48212EE191EC7A2006A3EBB /* mapType.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapType.png; sourceTree = "<group>"; };
 		E48212F0191EC903006A3EBB /* index-cards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "index-cards.png"; sourceTree = "<group>"; };
+		E4A4643A1930D89700E27840 /* AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
+		E4A4643B1930D89700E27840 /* AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertView.m; sourceTree = "<group>"; };
 		E4C48FE8190C166D006E15BE /* SearchEntryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchEntryTableViewController.h; sourceTree = "<group>"; };
 		E4C48FE9190C166D006E15BE /* SearchEntryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchEntryTableViewController.m; sourceTree = "<group>"; };
 		E4C48FED190C17EC006E15BE /* SearchEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchEntry.h; sourceTree = "<group>"; };
@@ -146,6 +149,7 @@
 		BBF8CFA518FCB5D1006B6E88 /* MyMapFinder */ = {
 			isa = PBXGroup;
 			children = (
+				E4A464391930D87200E27840 /* Other */,
 				E467BAB81911EFDE0064C442 /* Images */,
 				E467BAAC1911E87B0064C442 /* iPad */,
 				E4C48FEC190C17C8006E15BE /* Models */,
@@ -208,6 +212,15 @@
 				E467BAB51911EF310064C442 /* Map_Search_120_120.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		E4A464391930D87200E27840 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E4A4643A1930D89700E27840 /* AlertView.h */,
+				E4A4643B1930D89700E27840 /* AlertView.m */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 		E4C48FEB190C16DB006E15BE /* ViewControllers */ = {
@@ -340,6 +353,7 @@
 				BBB5E23A19186B4600AE1DB3 /* myAnnotation.m in Sources */,
 				E4C48FF5190C54E6006E15BE /* EditSearchEntryViewController.m in Sources */,
 				BBF8CFAC18FCB5D1006B6E88 /* main.m in Sources */,
+				E4A4643C1930D89700E27840 /* AlertView.m in Sources */,
 				E4C48FF2190C1E6E006E15BE /* SearchEntryStore.m in Sources */,
 				E41DEA19191EE3CF004DC215 /* MyMapFinder.xcdatamodeld in Sources */,
 				E4C48FEF190C17EC006E15BE /* SearchEntry.m in Sources */,
