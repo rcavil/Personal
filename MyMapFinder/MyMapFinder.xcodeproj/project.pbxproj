@@ -295,6 +295,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Ron Cavil";
 				TargetAttributes = {
+					BBF8CF9B18FCB5D1006B6E88 = {
+						DevelopmentTeam = 4QFN3B3ZEH;
+					};
 					BBF8CFBC18FCB5D1006B6E88 = {
 						TestTargetID = BBF8CF9B18FCB5D1006B6E88;
 					};
